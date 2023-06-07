@@ -2,5 +2,8 @@
   "Язык": "English",
   "Toggle": "Toggle",
   "Main": "Main Page",
-  "About": "About Page"
+  "About": "About Page",
+  "NotFoundPage": "Page not found",
+  "ErrorPageTitle": "Something went wrong.",
+  "ErrorPageReload": "Reload page"
 }
