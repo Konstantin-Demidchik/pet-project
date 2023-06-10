@@ -29,9 +29,16 @@ module.exports = {
         '@typescript-eslint/no-misused-promises': 'off',
         '@typescript-eslint/no-floating-promises': 'off',
         '@typescript-eslint/naming-convention': 'off',
-        'i18next/no-literal-string': ['error', { markupOnly: true }]
+        'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] }],
+        '@typescript-eslint/consistent-type-imports': 'off'
     },
     globals: {
         __IS_DEV__: true
+    },
+    overrides: {
+        files: ['**/src/**/*.test.{ts, tsx}'],
+        rules: {
+            'i18next/no-literal-string': 'off'
+        }
     }
 }

@@ -20,7 +20,7 @@ export const LangSwitcher = ({ className }: LangSwitcherProps) => {
             theme={ThemeButton.CLEAR}
             className={classNames(styles.LangSwitcher, {}, [className])}
         >
-            {t('Язык')}
+            {t('Lang')}
         </Button>
     );
 };
