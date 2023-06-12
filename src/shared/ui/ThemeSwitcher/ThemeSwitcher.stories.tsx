@@ -5,8 +5,8 @@ import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDeco
 import { Theme } from 'app/providers/ThemeProvider';
 
 const meta: Meta<typeof ThemeSwitcher> = {
-  title: 'shared/ThemeSwitcher',
-  component: ThemeSwitcher
+    title: 'shared/ThemeSwitcher',
+    component: ThemeSwitcher
 };
 
 export default meta;

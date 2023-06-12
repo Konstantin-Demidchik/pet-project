@@ -16,8 +16,8 @@ export default ({ config }: { config: webpack.Configuration }) => {
     const fileLoaderRule = rules?.find(rule => rule["test"].test('.svg'));
     fileLoaderRule && (fileLoaderRule["exclude"] = /\.svg$/);
     rules?.push({
-      test: /\.svg$/,
-      use: ["@svgr/webpack"],
+        test: /\.svg$/,
+        use: ["@svgr/webpack"],
     });
     
 

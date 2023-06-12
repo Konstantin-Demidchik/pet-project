@@ -9,8 +9,6 @@ describe('Sidebar Test', () => {
     test('Test component', () => {
         renderWithTranslation(<Sidebar />);
         expect(screen.getByTestId('sidebar')).toBeInTheDocument();
-        
-        
     });
 
     test('Test toggle component', () => {
@@ -18,7 +16,7 @@ describe('Sidebar Test', () => {
         expect(screen.getByTestId('sidebar')).toBeInTheDocument();
 
         fireEvent.click(screen.getByTestId('sidebar-toggle'));
-        
+
         expect(screen.getByTestId('sidebar')).toHaveClass('collapsed');
     });
 });

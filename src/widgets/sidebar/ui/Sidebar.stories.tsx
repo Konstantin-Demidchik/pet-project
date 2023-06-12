@@ -5,8 +5,8 @@ import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDeco
 import { Theme } from 'app/providers/ThemeProvider';
 
 const meta: Meta<typeof Sidebar> = {
-  title: 'widgets/Sidebar',
-  component: Sidebar
+    title: 'widgets/Sidebar',
+    component: Sidebar
 };
 
 export default meta;

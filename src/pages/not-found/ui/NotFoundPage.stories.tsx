@@ -4,8 +4,8 @@ import { Theme } from 'app/providers/ThemeProvider';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 
 const meta: Meta<typeof NotFoundPage> = {
-  title: 'pages/NotFoundPage',
-  component: NotFoundPage
+    title: 'pages/NotFoundPage',
+    component: NotFoundPage
 };
 
 export default meta;
@@ -14,5 +14,5 @@ type Story = StoryObj<typeof NotFoundPage>;
 export const Light: Story = {};
 
 export const Dark: Story = {
-    decorators:[ThemeDecorator(Theme.DARK)]
+    decorators: [ThemeDecorator(Theme.DARK)]
 };

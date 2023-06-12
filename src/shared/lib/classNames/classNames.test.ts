@@ -14,11 +14,19 @@ describe('classNames', () => {
     });
 
     test('test with mods', () => {
-        expect(classNames('cls1', { hovered: true, selectable: false, red: true }, ['cls2', 'cls3'])).toBe('cls1 cls2 cls3 hovered red');
+        expect(classNames('cls1', { 
+            hovered: true, 
+            selectable: false, 
+            red: true 
+        }, ['cls2', 'cls3'])).toBe('cls1 cls2 cls3 hovered red');
     });
 
     test('test with uknown mods', () => {
         const expected = 'cls1 cls2 cls3 hovered red';
-        expect(classNames('cls1', { hovered: true, selectable: undefined, red: true }, ['cls2', 'cls3'])).toBe(expected);
+        expect(classNames('cls1', { 
+            hovered: true, 
+            selectable: undefined, 
+            red: true 
+        }, ['cls2', 'cls3'])).toBe(expected);
     });
 });
