@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button, ThemeButton } from './Button';
+import { Button, SizeButton, ThemeButton } from './Button';
 import { Theme } from 'app/providers/ThemeProvider';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 
@@ -45,3 +45,59 @@ export const OutlineDark: Story = {
 };
 
 OutlineDark.decorators = [ThemeDecorator(Theme.DARK)]
+
+export const Background: Story = {
+    // More on args: https://storybook.js.org/docs/react/writing-stories/args
+    args: {
+        children: 'Test',
+        theme: ThemeButton.BACKGROUND
+    }
+};
+
+export const BackgroundInverted: Story = {
+    // More on args: https://storybook.js.org/docs/react/writing-stories/args
+    args: {
+        children: 'Test',
+        theme: ThemeButton.BACKGROUND_INVERTED
+    }
+};
+
+export const Square: Story = {
+    // More on args: https://storybook.js.org/docs/react/writing-stories/args
+    args: {
+        children: '>',
+        theme: ThemeButton.BACKGROUND_INVERTED,
+        square: true
+    }
+};
+
+export const SquareSizeL: Story = {
+    // More on args: https://storybook.js.org/docs/react/writing-stories/args
+    args: {
+        children: '>',
+        theme: ThemeButton.BACKGROUND_INVERTED,
+        square: true,
+        size: SizeButton.L
+    }
+};
+
+export const SquareSizeM: Story = {
+    // More on args: https://storybook.js.org/docs/react/writing-stories/args
+    args: {
+        children: '>',
+        theme: ThemeButton.BACKGROUND_INVERTED,
+        square: true,
+        size: SizeButton.M
+    }
+};
+
+export const SquareSizeXL: Story = {
+    // More on args: https://storybook.js.org/docs/react/writing-stories/args
+    args: {
+        children: '>',
+        theme: ThemeButton.BACKGROUND_INVERTED,
+        square: true,
+        size: SizeButton.XL
+    }
+};
+
