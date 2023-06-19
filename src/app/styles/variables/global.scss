@@ -11,8 +11,13 @@
     --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
 
     // sizes
-
     --navbar-height: 50px;
     --sidebar-width: 300px;
     --sidebar-collapsed-width: 80px;
+
+    // colors
+    --bg-color-overlay: rgb(0 0 0 / 60%);
+
+    // z-index
+    --modal-z-index: 10;
 }

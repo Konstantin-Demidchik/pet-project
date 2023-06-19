@@ -5,5 +5,6 @@
   "About": "О сайте",
   "NotFoundPage": "Страница не найдена",
   "ErrorPageTitle": "Что то пошло не так",
-  "ErrorPageReload": "Обновить страницу"
+  "ErrorPageReload": "Обновить страницу",
+  "LogIn": "Войти"
 }
