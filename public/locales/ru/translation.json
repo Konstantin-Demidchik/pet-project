@@ -6,5 +6,7 @@
   "NotFoundPage": "Страница не найдена",
   "ErrorPageTitle": "Что то пошло не так",
   "ErrorPageReload": "Обновить страницу",
-  "LogIn": "Войти"
+  "LogIn": "Войти",
+  "Increment": "Increment",
+  "Decrement": "Decrement"
 }

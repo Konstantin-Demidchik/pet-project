@@ -6,5 +6,7 @@
   "NotFoundPage": "Page not found",
   "ErrorPageTitle": "Something went wrong.",
   "ErrorPageReload": "Reload page",
-  "LogIn": "Log In"
+  "LogIn": "Log In",
+  "Increment": "Increment",
+  "Decrement": "Decrement"
 }

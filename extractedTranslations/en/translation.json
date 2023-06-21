@@ -1,7 +1,9 @@
 {
   "About": "About",
+  "Decrement": "Decrement",
   "ErrorPageReload": "ErrorPageReload",
   "ErrorPageTitle": "ErrorPageTitle",
+  "Increment": "Increment",
   "Lang": "",
   "LogIn": "LogIn",
   "Main": "Main",
