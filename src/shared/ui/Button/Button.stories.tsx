@@ -6,7 +6,8 @@ import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDeco
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta: Meta<typeof Button> = {
     title: 'shared/Button',
-    component: Button
+    component: Button,
+    decorators: [ThemeDecorator(Theme.LIGHT)]
 };
 
 export default meta;
@@ -41,10 +42,9 @@ export const OutlineDark: Story = {
     args: {
         children: 'Test',
         theme: ThemeButton.OUTLINE
-    }
+    },
+    decorators: [ThemeDecorator(Theme.DARK)]
 };
-
-OutlineDark.decorators = [ThemeDecorator(Theme.DARK)]
 
 export const Background: Story = {
     // More on args: https://storybook.js.org/docs/react/writing-stories/args
@@ -71,6 +71,16 @@ export const Square: Story = {
     }
 };
 
+export const SquareDark: Story = {
+    // More on args: https://storybook.js.org/docs/react/writing-stories/args
+    args: {
+        children: '>',
+        theme: ThemeButton.BACKGROUND_INVERTED,
+        square: true
+    },
+    decorators: [ThemeDecorator(Theme.DARK)]
+};
+
 export const SquareSizeL: Story = {
     // More on args: https://storybook.js.org/docs/react/writing-stories/args
     args: {
@@ -78,7 +88,8 @@ export const SquareSizeL: Story = {
         theme: ThemeButton.BACKGROUND_INVERTED,
         square: true,
         size: SizeButton.L
-    }
+    },
+    decorators: [ThemeDecorator(Theme.DARK)]
 };
 
 export const SquareSizeM: Story = {

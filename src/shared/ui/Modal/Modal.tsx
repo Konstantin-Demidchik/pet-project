@@ -3,21 +3,22 @@ import { Portal } from 'shared/ui/Portal/Portal';
 
 import styles from './Modal.module.scss';
 import { classNames } from 'shared/lib/classNames/classNames';
+import { useTheme } from 'app/providers/ThemeProvider';
 
 interface ModalProps {
     className?: string;
     children?: React.ReactNode;
     isOpen: boolean;
     onClose: () => void;
-    isStorybook?: boolean;
 }
 
 const ANIMATION_CLOSING_MODAL = 300;
 
 export const Modal = (props: ModalProps) => {
-    const { className, children, isOpen, onClose, isStorybook } = props;
+    const { className, children, isOpen, onClose } = props;
     const [isClosing, setIsClosing] = useState(false);
     const timerRef = useRef<ReturnType<typeof setTimeout>>();
+    const { theme } = useTheme();
 
     const closeHandler = useCallback(() => {
         if (onClose) {
@@ -48,21 +49,16 @@ export const Modal = (props: ModalProps) => {
             clearTimeout(timerRef.current);
             window.removeEventListener('keydown', onKeyDown);
         }
-    }, []);
+    }, [isOpen, onKeyDown]);
 
+    const mods: Record<string, boolean> = {
+        [styles.opened]: isOpen,
+        [styles.closing]: isClosing,
+    };
 
-
-    const element = useMemo(() => document.getElementById('app'), []);
-
-    const body = useMemo(() => {
-
-        const mods: Record<string, boolean> = {
-            [styles.opened]: isOpen,
-            [styles.closing]: isClosing,
-        };
-
-        return (
-            <div className={classNames(styles.Modal, mods, [className])}>
+    return (
+        <Portal>
+            <div className={classNames(styles.Modal, mods, [className, theme, 'app-modal'])}>
                 <div className={styles.overlay} onClick={closeHandler}>
                     <div
                         className={styles.content}
@@ -72,8 +68,6 @@ export const Modal = (props: ModalProps) => {
                     </div>
                 </div>
             </div>
-        )
-    }, [children, className, onClickContent, closeHandler, isOpen, isClosing]);
-
-    return isStorybook ? body : <Portal element={element}>{body}</Portal>
+        </Portal>
+    );
 };
