@@ -8,5 +8,7 @@
   "ErrorPageReload": "Обновить страницу",
   "LogIn": "Войти",
   "Increment": "Increment",
-  "Decrement": "Decrement"
+  "Decrement": "Decrement",
+  "Username": "Имя",
+  "Password": "Пароль"
 }

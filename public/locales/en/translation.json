@@ -8,5 +8,7 @@
   "ErrorPageReload": "Reload page",
   "LogIn": "Log In",
   "Increment": "Increment",
-  "Decrement": "Decrement"
+  "Decrement": "Decrement",
+  "Username": "Username",
+  "Password": "Password"
 }

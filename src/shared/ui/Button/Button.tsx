@@ -5,6 +5,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 
 export enum ThemeButton {
     CLEAR = 'clear',
+    CLEAR_INVERTED = 'clearInverted',
     OUTLINE = 'outline',
     BACKGROUND = 'background',
     BACKGROUND_INVERTED = 'backgroundInverted'
@@ -24,9 +25,18 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export const Button: FC<ButtonProps> = (props: ButtonProps) => {
-    const { className, children, theme, square, size = SizeButton.M, ...otherProps } = props;
+    const { 
+        className, 
+        children, 
+        theme, 
+        square, 
+        size = SizeButton.M, 
+        ...otherProps 
+    } = props;
+
     return (
         <button 
+            type="button"
             className={classNames(
                 styles.Button, 
                 { [styles.square]: square }, 
