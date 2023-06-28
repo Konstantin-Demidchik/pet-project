@@ -49,6 +49,11 @@
     font: var(--font-xl);
 }
 
+.disabled {
+    opacity: 0.5;
+    cursor: auto;
+}
+
 .square {
     padding: 0;
 

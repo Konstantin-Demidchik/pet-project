@@ -1,11 +1,13 @@
 {
   "About": "About",
+  "AuthForm": "AuthForm",
   "Decrement": "Decrement",
   "ErrorPageReload": "ErrorPageReload",
   "ErrorPageTitle": "ErrorPageTitle",
   "Increment": "Increment",
   "Lang": "Lang",
   "LogIn": "LogIn",
+  "LogOut": "LogOut",
   "Main": "Main",
   "NotFoundPage": "NotFoundPage",
   "Password": "Password",

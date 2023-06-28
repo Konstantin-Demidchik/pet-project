@@ -10,5 +10,7 @@
   "Increment": "Increment",
   "Decrement": "Decrement",
   "Username": "Username",
-  "Password": "Password"
+  "Password": "Password",
+  "AuthForm": "Auth Form",
+  "LogOut": "Log Out"
 }

@@ -112,3 +112,12 @@ export const SquareSizeXL: Story = {
     }
 };
 
+export const Disabled: Story = {
+    // More on args: https://storybook.js.org/docs/react/writing-stories/args
+    args: {
+        children: 'Log In',
+        theme: ThemeButton.OUTLINE,
+        disabled: true,
+    }
+};
+

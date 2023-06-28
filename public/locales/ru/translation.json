@@ -10,5 +10,7 @@
   "Increment": "Increment",
   "Decrement": "Decrement",
   "Username": "Имя",
-  "Password": "Пароль"
+  "Password": "Пароль",
+  "AuthForm": "Форма Авторизации",
+  "LogOut": "Выйти"
 }

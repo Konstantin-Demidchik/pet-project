@@ -19,7 +19,6 @@ const preview: Preview = {
     decorators: [
         ThemeDecorator(Theme.LIGHT),
         RouteDecorator,
-        StoreDecorator
     ],
 };
 
