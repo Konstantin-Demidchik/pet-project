@@ -29,17 +29,6 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-
-    .item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-
-        .icon {
-            fill: var(--inverted-primary-color);
-            margin-right: 10px;
-        }
-    }
 }
 
 .collapsed {
