@@ -1,4 +1,7 @@
 {
-    "Title": "Profile Page"
+  "Title": "Profile Page",
+  "profile.NameCard": "Profile",
+  "profile.Edit": "Edit",
+  "profile.YourName": "First name",
+  "profile.YourLastName": "Lastname"
 }
-  

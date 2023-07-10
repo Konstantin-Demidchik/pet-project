@@ -2,6 +2,7 @@
   "About": "About",
   "AuthForm": "AuthForm",
   "Decrement": "Decrement",
+  "Edit": "Edit",
   "ErrorPageReload": "ErrorPageReload",
   "ErrorPageTitle": "ErrorPageTitle",
   "Increment": "Increment",
@@ -9,12 +10,15 @@
   "LogIn": "LogIn",
   "LogOut": "LogOut",
   "Main": "Main",
+  "NameCard": "NameCard",
   "NotFoundPage": "NotFoundPage",
   "Password": "Password",
   "Title": "Title",
   "Title123213123": "Title123213123",
   "Toggle": "Toggle",
   "Username": "Username",
+  "YourLastName": "YourLastName",
+  "YourName": "YourName",
   "Войти": "Войти",
   "Язык": "Язык"
 }

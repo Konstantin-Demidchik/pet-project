@@ -1,4 +1,7 @@
 {
-    "Title": "Страница профиля"
+  "Title": "Страница профиля",
+  "profile.NameCard": "Профиль",
+  "profile.Edit": "Редактировать",
+  "profile.YourName": "Ваше имя",
+  "profile.YourLastName": "Ваша фамилия"
 }
-  
