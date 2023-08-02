@@ -13,5 +13,7 @@
   "Username": "Username",
   "Password": "Password",
   "AuthForm": "Auth Form",
-  "LogOut": "Log Out"
+  "LogOut": "Log Out",
+  "Currency": "Currency",
+  "Country": "Country"
 }

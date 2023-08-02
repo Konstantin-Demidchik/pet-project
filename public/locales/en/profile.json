@@ -1,7 +1,15 @@
 {
   "Title": "Profile Page",
-  "profile.NameCard": "Profile",
-  "profile.Edit": "Edit",
-  "profile.YourName": "First name",
-  "profile.YourLastName": "Lastname"
+  "NameCard": "Profile",
+  "Edit": "Edit",
+  "Cancel": "Cancel",
+  "YourName": "First name",
+  "YourLastName": "Lastname",
+  "ErrorProfileLoading": "A profile error has occurred",
+  "ErrorProfileLoadingText": "Try reloading the page",
+  "Save": "Save",
+  "YourCity": "City",
+  "YourAge": "Age",
+  "YourUsername": "Username",
+  "YourAvatar": "Avatar"
 }

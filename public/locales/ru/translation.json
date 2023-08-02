@@ -13,5 +13,7 @@
   "Username": "Имя",
   "Password": "Пароль",
   "AuthForm": "Форма Авторизации",
-  "LogOut": "Выйти"
+  "LogOut": "Выйти",
+  "Currency": "Валюта",
+  "Country": "Ваша страна"
 }

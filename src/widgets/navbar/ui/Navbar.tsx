@@ -30,6 +30,7 @@ export const Navbar = ({ className }: NavbarProps) => {
     }, []);
 
     const onLogout = useCallback(() => {
+        console.log('authData', authData);
         dispatch(userActions.logout());
     }, [dispatch]);
 
@@ -46,7 +47,6 @@ export const Navbar = ({ className }: NavbarProps) => {
             </div>
         )
     }
-
 
     return (
         <div className={classNames(styles.Navbar, {}, [className])}>

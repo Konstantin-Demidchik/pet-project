@@ -1,7 +1,15 @@
 {
   "Title": "Страница профиля",
-  "profile.NameCard": "Профиль",
-  "profile.Edit": "Редактировать",
-  "profile.YourName": "Ваше имя",
-  "profile.YourLastName": "Ваша фамилия"
+  "NameCard": "Профиль",
+  "Edit": "Редактировать",
+  "Cancel": "Отмена",
+  "YourName": "Ваше имя",
+  "YourLastName": "Ваша фамилия",
+  "ErrorProfileLoading": "Произошла ошибка профиля",
+  "ErrorProfileLoadingText": "Попробуйте перезагрузить страницу",
+  "Save": "Сохранить",
+  "YourCity": "Ваш город",
+  "YourAge": "Ваш возраст",
+  "YourUsername": "Ваше пользовательское имя",
+  "YourAvatar": "Ваше фото"
 }

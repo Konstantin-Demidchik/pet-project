@@ -1,0 +1,26 @@
+.Select {
+    display: flex;
+
+    .placeholder {
+        margin-right: 5px;
+    }
+
+    .selectWrapper {
+        background: none;
+        outline: none;
+        color: var(--primary-color);
+        padding: 2px 10px;
+        border: 1px solid var(--primary-color);
+
+        option {
+            color: var(--inverted-primary-color);
+            background-color: var(--inverted-bg-color);
+        }
+    }
+
+    &.readonly {
+        .placeholder {
+            opacity: 0.7;
+        }
+    }
+}
