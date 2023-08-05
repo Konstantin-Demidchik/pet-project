@@ -11,5 +11,10 @@
   "YourCity": "City",
   "YourAge": "Age",
   "YourUsername": "Username",
-  "YourAvatar": "Avatar"
+  "YourAvatar": "Avatar",
+  "IncorrectUserData": "Incorrect user data",
+  "IncorrectAge": "Incorrect profile age",
+  "IncorrectCountry": "Incorrect profile country",
+  "IncorrectNoData": "No profile data",
+  "IncorrectServerError": "Incorrect profile server error"
 }

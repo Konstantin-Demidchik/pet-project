@@ -11,5 +11,10 @@
   "YourCity": "Ваш город",
   "YourAge": "Ваш возраст",
   "YourUsername": "Ваше пользовательское имя",
-  "YourAvatar": "Ваше фото"
+  "YourAvatar": "Ваше фото",
+  "IncorrectUserData": "Неверные пользовательские данные",
+  "IncorrectAge": "Некорректный пользовательский возраст",
+  "IncorrectCountry": "Некорректная пользовательская страна",
+  "IncorrectNoData": "Нет данных профиля",
+  "IncorrectServerError": "Ошибка сервера профиля"
 }
