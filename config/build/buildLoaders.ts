@@ -1,25 +1,11 @@
 import { type ModuleOptions, type RuleSetRule } from 'webpack';
 import { type BuildOptions } from './types/config';
 import { buildCssLoader } from './loaders/buildCssLoader';
+import { buildBabelLoader } from './loaders/buildBabelLoader';
 
 
 export function buildLoaders (options: BuildOptions): ModuleOptions {
-    const bableLoader: RuleSetRule = {
-        test: /\.(js|jsx|tsx)$/,
-        exclude: /node_modules/,
-        use: {
-            loader: 'babel-loader',
-            options: {
-                presets: ['@babel/preset-env'],
-                plugins: [
-                    ['i18next-extract', {
-                        locales: ['ru', 'en'],
-                        keyAsDefaultValue: true
-                    }]
-                ]
-            }
-        }
-    };
+    const bableLoader: RuleSetRule = buildBabelLoader(options);
 
     const svgLoader: RuleSetRule = {
         test: /\.svg$/,

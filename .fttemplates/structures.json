@@ -1,0 +1,25 @@
+{
+    "name": "My Custom Template",
+    "customVariables": [
+        "CustomVar",
+        "CustomVar2"
+    ],
+    "omitParentDirectory": true,
+    "structure": [
+        {
+            "fileName": "<FTName>.jsx",
+            "template": "Typescript Functional Component"
+        },
+        {
+            "fileName": "tests/<FTName>.test.js"
+        },
+        {
+            "fileName": "index.js",
+            "template": "IndexFile"
+        },
+        {
+            "fileName": "<CustomVar>",
+            "template": "EmptyDirectory"
+        }
+    ]
+}
