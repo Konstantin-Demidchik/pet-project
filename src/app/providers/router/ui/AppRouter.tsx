@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import { AppRouteProps, routeConfig } from 'shared/config/routeConfig/routeConfig';
 import { PageLoader } from 'widgets/page-loader';
-import RequireAuth from './RequireAuth';
+import {RequireAuth} from './RequireAuth';
 
 const AppRouter = (): JSX.Element => {
 

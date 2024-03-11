@@ -5,8 +5,8 @@
     ],
     "i18n-ally.keystyle": "flat",
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
-        "source.fixAll.stylelint": true,
+        "source.fixAll.eslint": "explicit",
+        "source.fixAll.stylelint": "explicit"
     },
     "eslint.validate": ["typescript", "typescriptreact", "javascript", "javascriptreact"],
     "stylelint.validate": ["css", "scss"]

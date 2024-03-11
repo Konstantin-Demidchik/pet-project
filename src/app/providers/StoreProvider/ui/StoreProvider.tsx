@@ -16,7 +16,6 @@ export const StoreProvider = ({ children, initialState, asyncReducers } : StoreP
     const store = createReduxStore(
         initialState as StateSchema, 
         asyncReducers as ReducersMapObject<StateSchema>,
-        navigate
     );
 
     return (
